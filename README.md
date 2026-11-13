@@ -5,14 +5,14 @@ Office AI chat served by your office's own idle Macs and Windows PCs. This repos
 ## Install on a Mac
 
 ```sh
-brew install --cask naklitechie/tap/emergic
+brew install --cask emergic/tap/emergic
 ```
 
 Or download `Emergic-macos.zip` from the [latest release](../../releases/latest), unzip it and move `Emergic.app` to Applications. Apple Silicon only.
 
 Emergic is ad-hoc signed and not Apple-notarised. If macOS blocks it, open it once with right-click → Open. When Emergic asks to find devices on your local network, allow it: machines in an office reach each other over the local network.
 
-Emergic updates itself when the office admin approves a release. A Mac that had Otium from Homebrew moves its record once with `brew uninstall --cask --force otium && brew install --cask --adopt naklitechie/tap/emergic`.
+Emergic updates itself when the office admin approves a release. A Mac that had Otium from Homebrew moves its record once with `brew uninstall --cask --force otium && brew install --cask --adopt emergic/tap/emergic`.
 
 ## Install on Windows
 
