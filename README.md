@@ -8,7 +8,7 @@ Office AI answered by your office's own idle Macs and PCs: chat, documents, meet
 brew install --cask emergic/tap/emergic
 ```
 
-Or download `Emergic-macos.zip` from the [latest release](../../releases/latest), unzip it and move `Emergic.app` to Applications. Apple Silicon, macOS 13 or later.
+Or download `Emergic.dmg` from the [latest release](../../releases/latest), open it and drag `Emergic.app` onto the Applications folder beside it. Apple Silicon, macOS 13 or later. `Emergic-macos.zip` holds the same app, for Homebrew and older links: unzip it and move `Emergic.app` to Applications.
 
 Emergic is signed but not yet Apple-notarised. If macOS blocks it, open it once with right-click → Open. When Emergic asks to find devices on your local network, allow it: machines in an office reach each other over the local network.
 
@@ -38,7 +38,8 @@ Computers in an office update from the office server, never straight from the in
 Each release lists the SHA-256 of its downloads in `SHA256SUMS`.
 
 ```sh
-shasum -a 256 Emergic-macos.zip                                   # Mac
+shasum -a 256 Emergic.dmg                                         # Mac disk image
+shasum -a 256 Emergic-macos.zip                                   # Mac zip
 ```
 
 ```powershell
